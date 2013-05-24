@@ -13,7 +13,7 @@ close $file;
 my $data = Load($yamlstr);
 undef $yamlstr;
 
-helper 'data'=>sub{ return $data; };
+my $g_pagesize = 30;
 
 get '/' => sub {
   my $self = shift;
@@ -22,15 +22,27 @@ get '/' => sub {
 
 get '/bbs/:bbsname' => sub {
 	my $self = shift;
+	my $page = $self->param('p');
+	$page = 1 unless $page;
+	my $pagesize = $self->param('s');
+	$pagesize = $g_pagesize unless $pagesize;
 
-	$self->render('bbs',page=>1);
+	my $from = ($page-1)*$pagesize;
+	my $to = $from+$pagesize-1;
+	my @list = @{$data->{$self->param('bbsname')}}[$from..$to];
+
+	my $total = @{$data->{$self->param('bbsname')}};
+	my $totalpage = int( $total / $pagesize + 0.99999999); # simple ceil
+	$self->render('bbs',page=>1, list=>\@list, from=>$from, totalpage=>$totalpage);
+
 };
-
-get '/bbs/:bbsname/:page' => sub {
+get '/thread/:bbsname/:seq' => sub {
 	my $self = shift;
-
-	$self->render('bbs');
+	my $t = $data->{$self->param('bbsname')}->[$self->param('seq')];
+	$self->render('bbsview', t=>$t);
 };
+
+
 
 app->start;
 __DATA__
@@ -50,8 +62,33 @@ __DATA__
 % layout 'default';
 % title $bbsname;
 
-<h1>Perlmania Legacy/BBS/<%= $bbsname %>#<%=$page %></h1>
+<h1>Perlmania Legacy/BBS/<%= $bbsname %>#page <%=$page %></h1>
 
+<ol start="<%=$from%>">
+% foreach my $l (@{$list}){
+% next unless $l;
+<li><a href='<%= url_for('thread/'.$bbsname.'/'.$from)->to_abs %>'><%= $l->{Title} %></a></li>
+% $from++;
+% }
+</ol>
+
+% foreach my $i (1..$totalpage){
+	<a href="<%= url_for("bbs/$bbsname")->to_abs . "?p=$i" %>"><%=$i %></a>
+% }
+
+@@ bbsview.html.ep
+% layout 'default';
+% title $bbsname;
+
+
+<h1>Perlmania Legacy/BBS/<%= $bbsname %>/<%=$seq%></h1>
+<h2><%= $t->{Title} %></h2>
+<ul id='info'>
+	<li>작성자: <%= $t->{Author} %></li>
+	<li>작성일: <%= $t->{Date}.' '.$t->{Time} %></li>
+	<li>조회수: <%= $t->{Hit} %></li>
+</ul>
+<pre id='content'><%= $t->{Body} %></pre>
 
 
 @@ layouts/default.html.ep

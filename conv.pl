@@ -23,6 +23,7 @@ foreach my $f (@files){
 
 	my $cnt=4;
 	my %ref;
+	my @buf;
 	while( $xml =~ m{<row>(.+?)</row>}gs ){
 		my $row = $1;
 		my %data;
@@ -32,7 +33,10 @@ foreach my $f (@files){
 			$data{$k} = $v;
 		}
 		$ref{$data{SelfID}} = \%data; #indexing
-
+		push(@buf, \%data);
+	}
+	foreach my $b (@buf){
+		my %data = %{$b};
 		if( $data{ParentID} ){
 			my $parent = $ref{$data{ParentID}};
 			if( $parent ){
