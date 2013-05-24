@@ -1,0 +1,62 @@
+#!/usr/bin/env perl
+use Mojolicious::Lite;
+use utf8;
+use YAML::XS;
+open my $file, "<", 'perlmania.yaml';
+my $yamlstr;
+{ 
+	local $/; undef $/;
+	$yamlstr = <$file>;
+}
+close $file;
+
+my $data = Load($yamlstr);
+undef $yamlstr;
+
+helper 'data'=>sub{ return $data; };
+
+get '/' => sub {
+  my $self = shift;
+  $self->render('index' , bbs=>[keys %{$data}]);
+};
+
+get '/bbs/:bbsname' => sub {
+	my $self = shift;
+
+	$self->render('bbs',page=>1);
+};
+
+get '/bbs/:bbsname/:page' => sub {
+	my $self = shift;
+
+	$self->render('bbs');
+};
+
+app->start;
+__DATA__
+
+@@ index.html.ep
+% layout 'default';
+% title 'Welcome';
+
+<h1>Perlmania Legacy/BBS</h1>
+<ul>
+% foreach my $k (@{$bbs}){
+<li><a href='<%= url_for('bbs/'.$k)->to_abs %>'><%= $k %></a></li>
+% }
+</ul>
+
+@@ bbs.html.ep
+% layout 'default';
+% title $bbsname;
+
+<h1>Perlmania Legacy/BBS/<%= $bbsname %>#<%=$page %></h1>
+
+
+
+@@ layouts/default.html.ep
+<!DOCTYPE html>
+<html>
+  <head><title><%= title %></title></head>
+  <body><%= content %></body>
+</html>
