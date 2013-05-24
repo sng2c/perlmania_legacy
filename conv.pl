@@ -22,6 +22,7 @@ foreach my $f (@files){
 	close $fh;
 
 	my $cnt=4;
+	my %ref;
 	while( $xml =~ m{<row>(.+?)</row>}gs ){
 		my $row = $1;
 		my %data;
@@ -29,6 +30,15 @@ foreach my $f (@files){
 			my $k = $1;
 			my $v = decode_entities($2);
 			$data{$k} = $v;
+		}
+		$ref{$data{SelfID}} = \%data; #indexing
+
+		if( $data{ParentID} ){
+			my $parent = $ref{$data{ParentID}};
+			if( $parent ){
+				push(@{$parent->{Threads}},\%data);
+				next;
+			}
 		}
 		push(@article,\%data);
 	}
