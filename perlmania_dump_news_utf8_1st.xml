@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<table name="news">
+	<row>
+		<field name="SelfID">0</field>
+		<field name="Author">INIT</field>
+		<field name="Email">INIT</field>
+		<field name="Homepage">INIT</field>
+		<field name="Title">INIT</field>
+		<field name="Date">2001-09-03</field>
+		<field name="Time">00:08:46</field>
+		<field name="Hit">0</field>
+		<field name="FamilyID">0</field>
+		<field name="ParentID" />
+		<field name="Body">INIT</field>
+	</row>
+	<row>
+		<field name="SelfID">5</field>
+		<field name="Author">이채광</field>
+		<field name="Email">vet045@yahoo.co.kr</field>
+		<field name="Homepage"></field>
+		<field name="Title">자료실 프로그램 업그레이드</field>
+		<field name="Date">2001-11-04</field>
+		<field name="Time">18:17:31</field>
+		<field name="Hit">879</field>
+		<field name="FamilyID">5</field>
+		<field name="ParentID" />
+		<field name="Body">자료실 버전 1.0에서 1.2로 업그레이드 했습니다.
+
+관리자의 삭제 기능이 추가되었으며, 코드를 약간 정리했습니다. 그리고 문서(POD)를 추가했습니다.
+
+.</field>
+	</row>
+	<row>
+		<field name="SelfID">1</field>
+		<field name="Author">김기석</field>
+		<field name="Email">kiseok7@yahoo.com</field>
+		<field name="Homepage"></field>
+		<field name="Title">펄마니아 홈페이지를 새 단장 했습니다.</field>
+		<field name="Date">2001-10-13</field>
+		<field name="Time">15:44:47</field>
+		<field name="Hit">848</field>
+		<field name="FamilyID">1</field>
+		<field name="ParentID" />
+		<field name="Body">이제 임박한것 같습니다.
+많은 도움 부탁드립니다.
+</field>
+	</row>
+	<row>
+		<field name="SelfID">2</field>
+		<field name="Author">이채광</field>
+		<field name="Email">vet045@yahoo.co.kr</field>
+		<field name="Homepage"></field>
+		<field name="Title">홈페이지 이전</field>
+		<field name="Date">2001-10-31</field>
+		<field name="Time">16:26:02</field>
+		<field name="Hit">779</field>
+		<field name="FamilyID">2</field>
+		<field name="ParentID" />
+		<field name="Body">홈페이지를 완전히 이전했습니다.
+
+...</field>
+	</row>
+	<row>
+		<field name="SelfID">3</field>
+		<field name="Author">김기석</field>
+		<field name="Email"></field>
+		<field name="Homepage"></field>
+		<field name="Title">링크 페이지를 업데이트 했습니다.</field>
+		<field name="Date">2001-11-02</field>
+		<field name="Time">14:23:28</field>
+		<field name="Hit">574</field>
+		<field name="FamilyID">3</field>
+		<field name="ParentID" />
+		<field name="Body">링크가 되지않는 사이트를 삭제하고 새로운 사이트들을 추가했습니다.
+
+:)
+
+한번 둘러 보세요~!
+</field>
+	</row>
+	<row>
+		<field name="SelfID">4</field>
+		<field name="Author">이채광</field>
+		<field name="Email">vet045@yahoo.co.kr</field>
+		<field name="Homepage"></field>
+		<field name="Title">관리자 메일을 추가했습니다.</field>
+		<field name="Date">2001-11-03</field>
+		<field name="Time">14:08:38</field>
+		<field name="Hit">792</field>
+		<field name="FamilyID">4</field>
+		<field name="ParentID" />
+		<field name="Body">메일서버(sendmail)의 메일 앨리어스를 통해서, to@perlmania.or.kr이라는 메일주소를 사용하기 시작했습니다.
+
+.</field>
+	</row>
+	<row>
+		<field name="SelfID">6</field>
+		<field name="Author">이채광</field>
+		<field name="Email">vet045@yahoo.co.kr</field>
+		<field name="Homepage"></field>
+		<field name="Title">'웹POD변환'을 보완하였습니다</field>
+		<field name="Date">2001-11-08</field>
+		<field name="Time">02:25:34</field>
+		<field name="Hit">769</field>
+		<field name="FamilyID">6</field>
+		<field name="ParentID" />
+		<field name="Body">'웹POD변환'을 보완하였습니다.
+
+많은 이용바랍니다.</field>
+	</row>
+	<row>
+		<field name="SelfID">7</field>
+		<field name="Author">김기석</field>
+		<field name="Email"></field>
+		<field name="Homepage"></field>
+		<field name="Title">오라일리의 창업자이자 사장인 팀 오라일리와의 인터뷰</field>
+		<field name="Date">2001-11-15</field>
+		<field name="Time">09:38:24</field>
+		<field name="Hit">725</field>
+		<field name="FamilyID">7</field>
+		<field name="ParentID" />
+		<field name="Body">오랜만에 한빛미디어 웹사이트에 갔다가 보게 되었습니다..
+
+읽어 볼만 한것 같아서..^^
+
+http://www.hanbitbook.co.kr/u4-04.htm?num=33&amp;from_page=u4-04_more
+</field>
+	</row>
+	<row>
+		<field name="SelfID">8</field>
+		<field name="Author">이채광</field>
+		<field name="Email">vet045@yahoo.co.kr</field>
+		<field name="Homepage"></field>
+		<field name="Title">구 게시판을 현 사이트로 이전!</field>
+		<field name="Date">2001-11-20</field>
+		<field name="Time">01:15:33</field>
+		<field name="Hit">957</field>
+		<field name="FamilyID">8</field>
+		<field name="ParentID" />
+		<field name="Body">왼쪽 컬럼에 보시면 'Read Only'라는 것이 추가되었습니다.
+
+구 게시판을 현 사이트로 옮긴거에요. 읽기랑 검색만 됩니다.
+
+...</field>
+	</row>
+	<row>
+		<field name="SelfID">9</field>
+		<field name="Author">이채광</field>
+		<field name="Email">vet045@yahoo.co.kr</field>
+		<field name="Homepage"></field>
+		<field name="Title">'게시판 자료 옮기기'를 PM Document에 올렸습니다.</field>
+		<field name="Date">2001-11-23</field>
+		<field name="Time">14:26:12</field>
+		<field name="Hit">782</field>
+		<field name="FamilyID">9</field>
+		<field name="ParentID" />
+		<field name="Body">'게시판 자료 옮기기'를 PM Document에 올렸습니다.
+
+...</field>
+	</row>
+	<row>
+		<field name="SelfID">11</field>
+		<field name="Author">김기석</field>
+		<field name="Email"></field>
+		<field name="Homepage"></field>
+		<field name="Title">각 펄 사이트의 메인 페이지 미러</field>
+		<field name="Date">2001-11-29</field>
+		<field name="Time">22:27:50</field>
+		<field name="Hit">708</field>
+		<field name="FamilyID">11</field>
+		<field name="ParentID" />
+		<field name="Body">
+www.perl.com과 use.perl.org의 기사 부분을
+
+미러하는 페이지를 만들었습니다.
+
+http://www.perlmania.or.kr/mirror.html
+
+crontab에 등록되어 오전 3시 5분과 10분에
+
+각각 update됩니다.
+
+</field>
+	</row>
+	<row>
+		<field name="SelfID">12</field>
+		<field name="Author">이채광</field>
+		<field name="Email"></field>
+		<field name="Homepage"></field>
+		<field name="Title">'아이콘'추가</field>
+		<field name="Date">2002-01-21</field>
+		<field name="Time">23:48:18</field>
+		<field name="Hit">609</field>
+		<field name="FamilyID">12</field>
+		<field name="ParentID" />
+		<field name="Body">김현승님이 보내주신 펄마니아 플래시를 '아이콘'에 추가하였습니다.
+
+...</field>
+	</row>
+	<row>
+		<field name="SelfID">13</field>
+		<field name="Author">김기석</field>
+		<field name="Email"></field>
+		<field name="Homepage"></field>
+		<field name="Title">프로젝트 페이지 추가</field>
+		<field name="Date">2002-03-06</field>
+		<field name="Time">00:42:15</field>
+		<field name="Hit">605</field>
+		<field name="FamilyID">13</field>
+		<field name="ParentID" />
+		<field name="Body">메뉴에 프로젝트 페이지가 추가 되었습니다.
+
+사용되는 스크립트는 현승님이 Wiki를 수정하신것으로
+
+POD문서 형식으로 작성해야 합니다.
+
+POD문서에 대해서는...
+
+PM Documets의 문서를 참고 하세요.
+</field>
+	</row>
+	<row>
+		<field name="SelfID">14</field>
+		<field name="Author">이채광</field>
+		<field name="Email">vet045@yahoo.co.kr</field>
+		<field name="Homepage"></field>
+		<field name="Title">운영체제 교체</field>
+		<field name="Date">2002-03-25</field>
+		<field name="Time">01:00:23</field>
+		<field name="Hit">1049</field>
+		<field name="FamilyID">14</field>
+		<field name="ParentID" />
+		<field name="Body">펄마니아의 운영체제가 리눅스에서 FreeBSD로 교체되었습니다.
+
+.</field>
+	</row>
+	<row>
+		<field name="SelfID">10</field>
+		<field name="Author">김기석</field>
+		<field name="Email"></field>
+		<field name="Homepage"></field>
+		<field name="Title">웹로그 분석기를 설치했습니다.</field>
+		<field name="Date">2001-11-29</field>
+		<field name="Time">21:03:14</field>
+		<field name="Hit">686</field>
+		<field name="FamilyID">10</field>
+		<field name="ParentID" />
+		<field name="Body">
+http://www.perlmania.or.kr/log
+
+에서 확인할 수 있습니다.
+
+crontab에 등록되어 매일 오전 3시 정각에 update됩니다.
+
+</field>
+	</row>
+	<row>
+		<field name="SelfID">15</field>
+		<field name="Author">이채광</field>
+		<field name="Email"></field>
+		<field name="Homepage"></field>
+		<field name="Title">게시판에 시간추가</field>
+		<field name="Date">2003-01-22</field>
+		<field name="Time">19:38:56</field>
+		<field name="Hit">520</field>
+		<field name="FamilyID">15</field>
+		<field name="ParentID" />
+		<field name="Body">'게시물 읽기'에 글쓴 시간을 추가했습니다.
+
+.</field>
+	</row>
+	<row>
+		<field name="SelfID">17</field>
+		<field name="Author">이채광</field>
+		<field name="Email"></field>
+		<field name="Homepage"></field>
+		<field name="Title">게시판 추가</field>
+		<field name="Date">2003-03-18</field>
+		<field name="Time">17:30:04</field>
+		<field name="Hit">525</field>
+		<field name="FamilyID">17</field>
+		<field name="ParentID" />
+		<field name="Body">'윈도우펄'과 'mod_perl&amp;Mason' 게시판을 추가하였습니다.
+
+.</field>
+	</row>
+	<row>
+		<field name="SelfID">18</field>
+		<field name="Author">김기석</field>
+		<field name="Email">kiseok7(at)yahoo'com</field>
+		<field name="Homepage">http://kr.blog.yahoo.com/kiseok7</field>
+		<field name="Title">DBM::Deep 모듈</field>
+		<field name="Date">2004-02-14</field>
+		<field name="Time">01:23:46</field>
+		<field name="Hit">533</field>
+		<field name="FamilyID">18</field>
+		<field name="ParentID" />
+		<field name="Body">CPAN에서 발견한 모듈인데
+
+예전에 이런기능 모듈이 있었으면 좋겠다고 생각했는데...
+
+드디어!
+
+특징은
+* 파일디비
+* 퓨어펄로 만들어짐
+* 다중 단계의 해쉬와 배열을 지원
+* 빠른동작(?)
+
+퓨어펄로 작성되었기 때문에 별도의 모듈이 필요없고 어디 환경의 펄에서나 동작이 가능하다.
+
+=&gt; http://search.cpan.org/search?module=DBM::Deep
+</field>
+	</row>
+</table>
